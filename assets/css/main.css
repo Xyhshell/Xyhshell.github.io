@@ -3,7 +3,6 @@
 
 /*
 	Read Only by HTML5 UP
-	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
@@ -49,7 +48,7 @@
 	}
 
 /* Box Model */
-
+/* 此下一段,第二栏分栏 */
 	*, *:before, *:after {
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
@@ -2082,16 +2081,18 @@
 				width: 48%;
 			}
 
-				ul.feature-icons li:before {
+/* 此下一段是第二栏,矢量图案 */
+				/* ul.feature-icons li:before {
 					-moz-osx-font-smoothing: grayscale;
 					-webkit-font-smoothing: antialiased;
 					font-family: FontAwesome;
 					font-style: normal;
 					font-weight: normal;
 					text-transform: none !important;
-				}
+				} */
 
-				ul.feature-icons li:before {
+/* 此下一段是第二栏,圈的底色 */
+				/* ul.feature-icons li:before {
 					background: #4acaa8;
 					border-radius: 100%;
 					color: #ffffff;
@@ -2103,7 +2104,7 @@
 					text-align: center;
 					top: 0;
 					width: 2.5em;
-				}
+				} */
 
 		ul.icons {
 			cursor: default;
@@ -2586,7 +2587,7 @@
 /* Main */
 
 	#main > section {
-		border-top: solid 6px #f4f4f4;
+		border-top: solid 6px #e62d0c;
 	}
 
 		#main > section > .container {
@@ -2599,7 +2600,7 @@
 
 /* One */
 
-	#one:before {
+	/* #one:before {
 		background-image: url("../../images/banner.jpg");
 		background-position: top right;
 		background-repeat: no-repeat;
@@ -2608,7 +2609,7 @@
 		display: block;
 		height: 15em;
 		width: 100%;
-	}
+	} */
 
 /* Footer */
 
