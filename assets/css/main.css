@@ -156,7 +156,7 @@
 		}
 
 		.container {
-			width: 85% !important;
+			width: 90% !important;
 		}
 
 	}
@@ -2523,11 +2523,6 @@
 
 /* Main */
 
-	#main > section {
-		border-top: solid 6px #ff0000;
-
-	}
-
 		#main > section > .container {
 			padding: 6em 0 4em 0;
 		}
@@ -2541,23 +2536,20 @@
 
 	#footer {
 		background: #ff0000;
-		border-top: 0;
 		color: #ffffff;
 		overflow: hidden;
-		padding: 1em 0 0.01em 0;
 	}
 
 		#footer .copyright {
 			line-height: 1em;
 			list-style: none;
-			padding: 0;
 		}
 
 			#footer .copyright li {
 				border-left: solid 1px #d4d4d4;
 				display: inline-block;
 				font-size: 1.2em;
-				margin-left: 2em;
+				margin-left: 1em;
 				padding-left: 1em;
 			}
 
@@ -2615,7 +2607,6 @@
 			#header {
 				width: 20em;
 			}
-	}
 
 
 /* Medium */
@@ -2781,7 +2772,7 @@
 					}
 
 				#header > footer {
-					padding: 1.5em;
+					padding: 1em;
 				}
 
 		/* Main */
