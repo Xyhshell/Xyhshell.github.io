@@ -2,7 +2,6 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
 
 /*
-	Read Only by HTML5 UP
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
@@ -1791,38 +1790,6 @@
 			border-color: #4acaa8;
 		}
 
-	.select-wrapper {
-		text-decoration: none;
-		display: block;
-		position: relative;
-	}
-
-		.select-wrapper:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
-			font-style: normal;
-			font-weight: normal;
-			text-transform: none !important;
-		}
-
-		.select-wrapper:before {
-			color: #e4e4e4;
-			content: '\f078';
-			display: block;
-			height: 2.75em;
-			line-height: 2.75em;
-			pointer-events: none;
-			position: absolute;
-			right: 0;
-			text-align: center;
-			top: 0;
-			width: 2.75em;
-		}
-
-		.select-wrapper select::-ms-expand {
-			display: none;
-		}
 
 	input[type="text"],
 	input[type="password"],
@@ -2081,30 +2048,6 @@
 				width: 48%;
 			}
 
-/* 此下一段是第二栏,矢量图案 */
-				/* ul.feature-icons li:before {
-					-moz-osx-font-smoothing: grayscale;
-					-webkit-font-smoothing: antialiased;
-					font-family: FontAwesome;
-					font-style: normal;
-					font-weight: normal;
-					text-transform: none !important;
-				} */
-
-/* 此下一段是第二栏,圈的底色 */
-				/* ul.feature-icons li:before {
-					background: #4acaa8;
-					border-radius: 100%;
-					color: #ffffff;
-					display: block;
-					height: 2.5em;
-					left: 0;
-					line-height: 2.5em;
-					position: absolute;
-					text-align: center;
-					top: 0;
-					width: 2.5em;
-				} */
 
 		ul.icons {
 			cursor: default;
@@ -2198,7 +2141,7 @@
 
 /* Table */
 
-	.table-wrapper {
+	.table-wrapper111111111111111111111111111 {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
 	}
@@ -2577,17 +2520,12 @@
 						border-top: 0;
 					}
 
-/* Wrapper */
-
-	#wrapper {
-		background: #fff;
-		padding-right: 23em;
-	}
 
 /* Main */
 
 	#main > section {
-		border-top: solid 6px #e62d0c;
+		border-top: solid 6px #ff0000;
+
 	}
 
 		#main > section > .container {
@@ -2598,27 +2536,15 @@
 			border-top: 0;
 		}
 
-/* One */
-
-	/* #one:before {
-		background-image: url("../../images/banner.jpg");
-		background-position: top right;
-		background-repeat: no-repeat;
-		background-size: cover;
-		content: '';
-		display: block;
-		height: 15em;
-		width: 100%;
-	} */
 
 /* Footer */
 
 	#footer {
-		background: #fafafa;
+		background: #ff0000;
 		border-top: 0;
-		color: #c0c0c0;
+		color: #ffffff;
 		overflow: hidden;
-		padding: 4em 0 2em 0;
+		padding: 1em 0 0.01em 0;
 	}
 
 		#footer .copyright {
@@ -2630,8 +2556,8 @@
 			#footer .copyright li {
 				border-left: solid 1px #d4d4d4;
 				display: inline-block;
-				font-size: 0.8em;
-				margin-left: 1em;
+				font-size: 1.2em;
+				margin-left: 2em;
 				padding-left: 1em;
 			}
 
@@ -2669,11 +2595,6 @@
 					padding: 1.5em;
 				}
 
-		/* Wrapper */
-
-			#wrapper {
-				padding-right: 21em;
-			}
 
 		/* Main */
 
@@ -2685,27 +2606,17 @@
 
 /* Large */
 
-	@media screen and (max-width: 1280px) {
-
 		/* Basic */
 
 			body, input, select, textarea {
 				font-size: 11pt;
 			}
 
-		/* Header */
-
 			#header {
 				width: 20em;
 			}
-
-		/* Wrapper */
-
-			#wrapper {
-				padding-right: 20em;
-			}
-
 	}
+
 
 /* Medium */
 
@@ -2769,115 +2680,13 @@
 					top: auto;
 				}
 
-		/* Wrapper */
 
-			#wrapper {
-				-moz-backface-visibility: hidden;
-				-webkit-backface-visibility: hidden;
-				-ms-backface-visibility: hidden;
-				backface-visibility: hidden;
-				-moz-transition: -moz-transform 0.5s ease;
-				-webkit-transition: -webkit-transform 0.5s ease;
-				-ms-transition: -ms-transform 0.5s ease;
-				transition: transform 0.5s ease;
-				padding: 44px 0 1px 0;
-			}
 
 		/* One */
 
 			#one:before {
 				height: 10em;
 			}
-
-		/* Off-Canvas Navigation */
-
-			#titleBar {
-				-moz-backface-visibility: hidden;
-				-webkit-backface-visibility: hidden;
-				-ms-backface-visibility: hidden;
-				backface-visibility: hidden;
-				-moz-transition: -moz-transform 0.5s ease;
-				-webkit-transition: -webkit-transform 0.5s ease;
-				-ms-transition: -ms-transform 0.5s ease;
-				transition: transform 0.5s ease;
-				display: block;
-				height: 44px;
-				left: 0;
-				position: fixed;
-				top: 0;
-				width: 100%;
-				z-index: 10001;
-				background: #222;
-				color: #fff;
-				min-width: 320px;
-			}
-
-				#titleBar .title {
-					color: #fff;
-					display: block;
-					font-weight: 700;
-					height: 44px;
-					line-height: 44px;
-					padding: 0 1em;
-					width: 100%;
-					text-align: left;
-				}
-
-					#titleBar .title a {
-						border: 0;
-						text-decoration: none;
-					}
-
-				#titleBar .toggle {
-					text-decoration: none;
-					height: 4em;
-					position: absolute;
-					top: 0;
-					width: 6em;
-					border: 0;
-					outline: 0;
-					right: 0;
-				}
-
-					#titleBar .toggle:before {
-						-moz-osx-font-smoothing: grayscale;
-						-webkit-font-smoothing: antialiased;
-						font-family: FontAwesome;
-						font-style: normal;
-						font-weight: normal;
-						text-transform: none !important;
-					}
-
-					#titleBar .toggle:before {
-						background: #ff4006;
-						color: #ffffff;
-						content: '\f0c9';
-						display: block;
-						font-size: 18px;
-						height: 44px;
-						line-height: 44px;
-						position: absolute;
-						text-align: center;
-						top: 0;
-						width: 64px;
-						right: 0;
-					}
-
-			body.header-visible #wrapper, body.header-visible #titleBar {
-				-moz-transform: translateX(-23em);
-				-webkit-transform: translateX(-23em);
-				-ms-transform: translateX(-23em);
-				transform: translateX(-23em);
-			}
-
-			body.header-visible #header {
-				-moz-transform: translateX(0);
-				-webkit-transform: translateX(0);
-				-ms-transform: translateX(0);
-				transform: translateX(0);
-			}
-
-	}
 
 /* Small */
 
@@ -3006,24 +2815,6 @@
 					}
 
 		/* Off-Canvas Navigation */
-
-			#titleBar .toggle {
-				height: 4em;
-				width: 6em;
-			}
-
-				#titleBar .toggle:before {
-					font-size: 14px;
-					width: 44px;
-				}
-
-			body.header-visible #wrapper, body.header-visible #titleBar {
-				-moz-transform: translateX(-17em);
-				-webkit-transform: translateX(-17em);
-				-ms-transform: translateX(-17em);
-				transform: translateX(-17em);
-			}
-
 	}
 
 /* XSmall */
