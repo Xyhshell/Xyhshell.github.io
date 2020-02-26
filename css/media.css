@@ -1,10 +1,10 @@
-@charset "gb2312";
+@charset "utf-8";
 /* media css Document */
 @media screen and (max-width:823px) {
-.ibody { background: url("../images/ms8.png")/*tpa=https://www.yangqq.com/web/25-blog/images/ms8.png*/ top right no-repeat #FFF; width: 90%; margin: auto; box-shadow: 0px 2px 5px #666; }
+.ibody { background: url("") top right no-repeat #FFF; width: 90%; margin: auto; box-shadow: 0px 2px 5px #666; }
 article { float: none; width: 100% }
 article { background: #fff }
-header { background: url("../images/ms8.png")/*tpa=https://www.yangqq.com/web/25-blog/images/ms8.png*/ top right no-repeat #FFF; }
+header { background: url("") top right no-repeat #FFF; }
 aside, .dateview { display: none }
 nav { padding-left: 0; text-align: center }
 nav a { padding: 0 5px; }
@@ -16,10 +16,10 @@ nav a { padding: 0 5px; }
 .blogs ul { width: 62%; }
 }
 @media screen and (max-width:598px) {
-.ibody { background: url("../images/ms8.png")/*tpa=https://www.yangqq.com/web/25-blog/images/ms8.png*/ top right no-repeat #FFF; width: 90%; margin: auto; box-shadow: 0px 2px 5px #666; }
+.ibody { background: url("") top right no-repeat #FFF; width: 90%; margin: auto; box-shadow: 0px 2px 5px #666; }
 article { float: none; width: 100% }
 article { background: #fff }
-header { background: url("../images/ms8.png")/*tpa=https://www.yangqq.com/web/25-blog/images/ms8.png*/ top right no-repeat #FFF; }
+header { background: url("") top right no-repeat #FFF; }
 aside, header h1, header h2, .dateview { display: none }
 nav { height: auto; line-height: 40px; text-align: center; background: #FFF; padding-left: 0px }
 nav a { display: block; background: #323232; clear: both; margin-bottom: 2px }
@@ -35,7 +35,7 @@ nav a { display: block; background: #323232; clear: both; margin-bottom: 2px }
 .ibody { width: 90%; margin: auto; box-shadow: 0px 2px 5px #666; }
 article { float: none; width: 100% }
 article { background: #fff }
-header { background: url("../images/ms8.png")/*tpa=https://www.yangqq.com/web/25-blog/images/ms8.png*/ top right no-repeat #FFF; }
+header { background: url("") top right no-repeat #FFF; }
 aside, header h1, header h2, .dateview, .banner, .bloglist h2, .blogs figure img, .newblog figure img, .newblog .autor { display: none }
 nav { height: auto; line-height: 40px; text-align: center; background: #FFF; padding-left: 0px }
 nav a { display: block; background: #323232; clear: both; margin-bottom: 2px }
