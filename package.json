@@ -58,7 +58,7 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "dependencies": {
-    "puppeteer": "1.6.0"
+    "puppeteer": "5.3.1"
   },
   "devDependencies": {
     "asar": "^0.14.3",
