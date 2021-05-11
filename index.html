@@ -144,6 +144,71 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://xyhshell.github.io/2021/05/11/Usb-%E5%90%8E%E5%8F%B0%E6%8B%B7%E8%B4%9D/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="http://p1.music.126.net/fGNCB3dV31wX7ZF2mglZdg==/109951164755221775.jpg?param=180y180">
+      <meta itemprop="name" content="Jingmo - Xiao">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Code blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/05/11/Usb-%E5%90%8E%E5%8F%B0%E6%8B%B7%E8%B4%9D/" class="post-title-link" itemprop="url">Usb 后台拷贝</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-05-11 17:41:47" itemprop="dateCreated datePublished" datetime="2021-05-11T17:41:47+08:00">2021-05-11</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境:"></a>开发环境:</h2><p>1.python 3.7.5</p>
+<p>2.pycharm</p>
+<blockquote>
+<p>初代版本，后续未更新！</p>
+</blockquote>
+<hr>
+<h3 id="Python-源码"><a href="#Python-源码" class="headerlink" title="Python 源码"></a>Python 源码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> shutil</span><br><span class="line"><span class="keyword">from</span> os.path <span class="keyword">import</span> join, getsize</span><br><span class="line"></span><br><span class="line"><span class="comment"># U盘路径</span></span><br><span class="line"></span><br><span class="line">USB = <span class="string">&#x27;E:\\&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 保存路径</span></span><br><span class="line"></span><br><span class="line">SAVE = <span class="string">&#x27;D:\\U盘资料&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取U盘中所有文件夹，及文件大小</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 形参：理解函数可以实现某种功能的模块，方法。实参，申明实参时，要给一个确定的值</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_dir_size</span>(<span class="params"><span class="built_in">dir</span></span>):</span></span><br><span class="line">    <span class="comment"># 初始化</span></span><br><span class="line">    size = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> root, dirs, files <span class="keyword">in</span> os.walk(<span class="built_in">dir</span>):</span><br><span class="line">        <span class="comment"># 获取U盘中资料大小，推导式</span></span><br><span class="line">        size += <span class="built_in">sum</span>(getsize(join(root, name)) <span class="keyword">for</span> name <span class="keyword">in</span> files)</span><br><span class="line">    <span class="built_in">print</span>(size)</span><br><span class="line">    <span class="keyword">return</span> size</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 专门做拷贝</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">usb_copy</span>():</span></span><br><span class="line">    <span class="comment"># 是shutil的内置函数，专做拷贝</span></span><br><span class="line">    shutil.copytree(USB, SAVE)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span>():</span></span><br><span class="line">    old_dirsize = <span class="number">0</span></span><br><span class="line">    <span class="comment"># 一直运行，不退出，死循环</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        <span class="keyword">if</span> os.path.exists(USB):</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;检测到优盘.......&#x27;</span>)</span><br><span class="line">            new_dirsize = get_dir_size(USB)</span><br><span class="line">            <span class="comment"># 做文件夹判断，如果文件夹大小不等于U盘大小</span></span><br><span class="line">            <span class="comment"># 这样就确定没有复制文件</span></span><br><span class="line">            <span class="keyword">if</span> old_dirsize != new_dirsize:</span><br><span class="line">                usb_copy()</span><br><span class="line">                old_dirsize = new_dirsize</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">&#x27;没有变化......&#x27;</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;暂时没有检测到优盘......&#x27;</span>)</span><br><span class="line"></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;开始休眠&#x27;</span>)</span><br><span class="line">        time.sleep(<span class="number">5</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;休眠文件.....&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+
+<h2 id="仅供交流-切勿用于非法途径"><a href="#仅供交流-切勿用于非法途径" class="headerlink" title="仅供交流, 切勿用于非法途径"></a>仅供交流, 切勿用于非法途径</h2><h3 id="2019-11-21-文件创建初期版本"><a href="#2019-11-21-文件创建初期版本" class="headerlink" title="2019.11.21 (文件创建初期版本)"></a>2019.11.21 (文件创建初期版本)</h3>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://xyhshell.github.io/2021/05/10/hexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
