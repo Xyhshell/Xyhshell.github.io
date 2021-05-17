@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Usb 后台拷贝</title>
+    <url>/2021/05/11/Usb-%E5%90%8E%E5%8F%B0%E6%8B%B7%E8%B4%9D/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h2><p>1.python 3.7.5</p>
+<p>2.pycharm</p>
+<blockquote>
+<p>初代版本，后续未更新！</p>
+</blockquote>
+<hr>
+<span id="more"></span>
+
+<h3 id="Python-源码"><a href="#Python-源码" class="headerlink" title="Python 源码"></a>Python 源码</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> shutil</span><br><span class="line"><span class="keyword">from</span> os.path <span class="keyword">import</span> join, getsize</span><br><span class="line"></span><br><span class="line"><span class="comment"># U盘路径</span></span><br><span class="line"></span><br><span class="line">USB = <span class="string">&#x27;E:\\&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 保存路径</span></span><br><span class="line"></span><br><span class="line">SAVE = <span class="string">&#x27;D:\\U盘资料&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取U盘中所有文件夹，及文件大小</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 形参：理解函数可以实现某种功能的模块，方法。实参，申明实参时，要给一个确定的值</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_dir_size</span>(<span class="params"><span class="built_in">dir</span></span>):</span></span><br><span class="line">    <span class="comment"># 初始化</span></span><br><span class="line">    size = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> root, dirs, files <span class="keyword">in</span> os.walk(<span class="built_in">dir</span>):</span><br><span class="line">        <span class="comment"># 获取U盘中资料大小，推导式</span></span><br><span class="line">        size += <span class="built_in">sum</span>(getsize(join(root, name)) <span class="keyword">for</span> name <span class="keyword">in</span> files)</span><br><span class="line">    <span class="built_in">print</span>(size)</span><br><span class="line">    <span class="keyword">return</span> size</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 专门做拷贝</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">usb_copy</span>():</span></span><br><span class="line">    <span class="comment"># 是shutil的内置函数，专做拷贝</span></span><br><span class="line">    shutil.copytree(USB, SAVE)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span>():</span></span><br><span class="line">    old_dirsize = <span class="number">0</span></span><br><span class="line">    <span class="comment"># 一直运行，不退出，死循环</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        <span class="keyword">if</span> os.path.exists(USB):</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;检测到优盘.......&#x27;</span>)</span><br><span class="line">            new_dirsize = get_dir_size(USB)</span><br><span class="line">            <span class="comment"># 做文件夹判断，如果文件夹大小不等于U盘大小</span></span><br><span class="line">            <span class="comment"># 这样就确定没有复制文件</span></span><br><span class="line">            <span class="keyword">if</span> old_dirsize != new_dirsize:</span><br><span class="line">                usb_copy()</span><br><span class="line">                old_dirsize = new_dirsize</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">&#x27;没有变化......&#x27;</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;暂时没有检测到优盘......&#x27;</span>)</span><br><span class="line"></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;开始休眠&#x27;</span>)</span><br><span class="line">        time.sleep(<span class="number">5</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;休眠文件.....&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+
+<h2 id="仅供交流-切勿用于非法途径"><a href="#仅供交流-切勿用于非法途径" class="headerlink" title="仅供交流, 切勿用于非法途径"></a>仅供交流, 切勿用于非法途径</h2><h3 id="2019-11-21-文件创建初期版本"><a href="#2019-11-21-文件创建初期版本" class="headerlink" title="2019.11.21 (文件创建初期版本)"></a>2019.11.21 (文件创建初期版本)</h3>]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+        <tag>code</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>blog 图片测试</title>
     <url>/2021/05/11/blog-%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="陶渊明"><a href="#陶渊明" class="headerlink" title="陶渊明"></a>陶渊明</h2><blockquote>
@@ -28,28 +50,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Usb 后台拷贝</title>
-    <url>/2021/05/11/Usb-%E5%90%8E%E5%8F%B0%E6%8B%B7%E8%B4%9D/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h2><p>1.python 3.7.5</p>
-<p>2.pycharm</p>
-<blockquote>
-<p>初代版本，后续未更新！</p>
-</blockquote>
-<hr>
-<span id="more"></span>
-
-<h3 id="Python-源码"><a href="#Python-源码" class="headerlink" title="Python 源码"></a>Python 源码</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">import</span> shutil</span><br><span class="line"><span class="keyword">from</span> os.path <span class="keyword">import</span> join, getsize</span><br><span class="line"></span><br><span class="line"><span class="comment"># U盘路径</span></span><br><span class="line"></span><br><span class="line">USB = <span class="string">&#x27;E:\\&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 保存路径</span></span><br><span class="line"></span><br><span class="line">SAVE = <span class="string">&#x27;D:\\U盘资料&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取U盘中所有文件夹，及文件大小</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 形参：理解函数可以实现某种功能的模块，方法。实参，申明实参时，要给一个确定的值</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_dir_size</span>(<span class="params"><span class="built_in">dir</span></span>):</span></span><br><span class="line">    <span class="comment"># 初始化</span></span><br><span class="line">    size = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> root, dirs, files <span class="keyword">in</span> os.walk(<span class="built_in">dir</span>):</span><br><span class="line">        <span class="comment"># 获取U盘中资料大小，推导式</span></span><br><span class="line">        size += <span class="built_in">sum</span>(getsize(join(root, name)) <span class="keyword">for</span> name <span class="keyword">in</span> files)</span><br><span class="line">    <span class="built_in">print</span>(size)</span><br><span class="line">    <span class="keyword">return</span> size</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 专门做拷贝</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">usb_copy</span>():</span></span><br><span class="line">    <span class="comment"># 是shutil的内置函数，专做拷贝</span></span><br><span class="line">    shutil.copytree(USB, SAVE)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span>():</span></span><br><span class="line">    old_dirsize = <span class="number">0</span></span><br><span class="line">    <span class="comment"># 一直运行，不退出，死循环</span></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        <span class="keyword">if</span> os.path.exists(USB):</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;检测到优盘.......&#x27;</span>)</span><br><span class="line">            new_dirsize = get_dir_size(USB)</span><br><span class="line">            <span class="comment"># 做文件夹判断，如果文件夹大小不等于U盘大小</span></span><br><span class="line">            <span class="comment"># 这样就确定没有复制文件</span></span><br><span class="line">            <span class="keyword">if</span> old_dirsize != new_dirsize:</span><br><span class="line">                usb_copy()</span><br><span class="line">                old_dirsize = new_dirsize</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">&#x27;没有变化......&#x27;</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&#x27;暂时没有检测到优盘......&#x27;</span>)</span><br><span class="line"></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;开始休眠&#x27;</span>)</span><br><span class="line">        time.sleep(<span class="number">5</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&#x27;休眠文件.....&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
-
-<h2 id="仅供交流-切勿用于非法途径"><a href="#仅供交流-切勿用于非法途径" class="headerlink" title="仅供交流, 切勿用于非法途径"></a>仅供交流, 切勿用于非法途径</h2><h3 id="2019-11-21-文件创建初期版本"><a href="#2019-11-21-文件创建初期版本" class="headerlink" title="2019.11.21 (文件创建初期版本)"></a>2019.11.21 (文件创建初期版本)</h3>]]></content>
-      <categories>
-        <category>python</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>code</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2021/05/10/hello-world/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -71,6 +71,25 @@
       <tags>
         <tag>blog 初始化</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/2021/05/10/test/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Quick-start"><a href="#Quick-start" class="headerlink" title="Quick start"></a>Quick start</h2><span id="more"></span>
+
+<h3 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Github</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://www.github.com/Xyhshell">Github</a></p>
+<h3 id="CSDN"><a href="#CSDN" class="headerlink" title="CSDN"></a>CSDN</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">CSDN</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://blog.csdn.net/jingmo_see">CSDN</a></p>
+<h3 id="哔哩哔哩"><a href="#哔哩哔哩" class="headerlink" title="哔哩哔哩"></a>哔哩哔哩</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">哔哩哔哩</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://space.bilibili.com/50764593">哔哩哔哩</a></p>
+<h3 id="网易云音乐"><a href="#网易云音乐" class="headerlink" title="网易云音乐"></a>网易云音乐</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">网易云音乐</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://music.163.com/#/user/home?id=301645298">网易云音乐</a></p>
+]]></content>
   </entry>
   <entry>
     <title>HEXO 相关参数及配置</title>
@@ -128,24 +147,5 @@
         <tag>教程</tag>
         <tag>笔记</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>test</title>
-    <url>/2021/05/10/test/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Quick-start"><a href="#Quick-start" class="headerlink" title="Quick start"></a>Quick start</h2><span id="more"></span>
-
-<h3 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Github</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://www.github.com/Xyhshell">Github</a></p>
-<h3 id="CSDN"><a href="#CSDN" class="headerlink" title="CSDN"></a>CSDN</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">CSDN</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://blog.csdn.net/jingmo_see">CSDN</a></p>
-<h3 id="哔哩哔哩"><a href="#哔哩哔哩" class="headerlink" title="哔哩哔哩"></a>哔哩哔哩</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">哔哩哔哩</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://space.bilibili.com/50764593">哔哩哔哩</a></p>
-<h3 id="网易云音乐"><a href="#网易云音乐" class="headerlink" title="网易云音乐"></a>网易云音乐</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">网易云音乐</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://music.163.com/#/user/home?id=301645298">网易云音乐</a></p>
-]]></content>
   </entry>
 </search>
