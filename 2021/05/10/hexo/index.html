@@ -129,7 +129,7 @@
 <p>生成密钥</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;用户邮箱&quot;</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="在用户目录的-ssh-目录下复制新创建的密钥文件，放置仓库公钥"><a href="#在用户目录的-ssh-目录下复制新创建的密钥文件，放置仓库公钥" class="headerlink" title="在用户目录的 .ssh 目录下复制新创建的密钥文件，放置仓库公钥"></a>在用户目录的 .ssh 目录下复制新创建的密钥文件，放置仓库公钥</h4><h3 id="博客-config-yml-文件的配置"><a href="#博客-config-yml-文件的配置" class="headerlink" title="博客 _config.yml 文件的配置"></a>博客 _config.yml 文件的配置</h3><p>博客根目录的 _config.yml 文件，将一下信息添加到里面去。</p>
+<h2 id="在用户目录的-ssh-目录下复制新创建的密钥文件，放置仓库公钥"><a href="#在用户目录的-ssh-目录下复制新创建的密钥文件，放置仓库公钥" class="headerlink" title="在用户目录的 .ssh 目录下复制新创建的密钥文件，放置仓库公钥"></a>在用户目录的 .ssh 目录下复制新创建的密钥文件，放置仓库公钥</h2><h3 id="博客-config-yml-文件的配置"><a href="#博客-config-yml-文件的配置" class="headerlink" title="博客 _config.yml 文件的配置"></a>博客 _config.yml 文件的配置</h3><p>博客根目录的 _config.yml 文件，将一下信息添加到里面去。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: <span class="comment"># 替换成你自己仓库的HTTP URL地址</span></span><br><span class="line">  branch: master  <span class="comment"># 提交主分支</span></span><br></pre></td></tr></table></figure>
 
 <h4 id="Hexo常用代码"><a href="#Hexo常用代码" class="headerlink" title="Hexo常用代码"></a>Hexo常用代码</h4><p>清理缓存</p>
