@@ -73,25 +73,6 @@
       </tags>
   </entry>
   <entry>
-    <title>test</title>
-    <url>/2021/05/10/test/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Quick-start"><a href="#Quick-start" class="headerlink" title="Quick start"></a>Quick start</h2><span id="more"></span>
-
-<h3 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Github</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://www.github.com/Xyhshell">Github</a></p>
-<h3 id="CSDN"><a href="#CSDN" class="headerlink" title="CSDN"></a>CSDN</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">CSDN</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://blog.csdn.net/jingmo_see">CSDN</a></p>
-<h3 id="哔哩哔哩"><a href="#哔哩哔哩" class="headerlink" title="哔哩哔哩"></a>哔哩哔哩</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">哔哩哔哩</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://space.bilibili.com/50764593">哔哩哔哩</a></p>
-<h3 id="网易云音乐"><a href="#网易云音乐" class="headerlink" title="网易云音乐"></a>网易云音乐</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">网易云音乐</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://music.163.com/#/user/home?id=301645298">网易云音乐</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>HEXO 相关参数及配置</title>
     <url>/2021/05/10/hexo/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="相关环境的检查"><a href="#相关环境的检查" class="headerlink" title="相关环境的检查"></a>相关环境的检查</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br><span class="line">git --version</span><br></pre></td></tr></table></figure>
@@ -149,8 +130,27 @@
       </tags>
   </entry>
   <entry>
+    <title>test</title>
+    <url>/2021/05/10/test/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Quick-start"><a href="#Quick-start" class="headerlink" title="Quick start"></a>Quick start</h2><span id="more"></span>
+
+<h3 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Github</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://www.github.com/Xyhshell">Github</a></p>
+<h3 id="CSDN"><a href="#CSDN" class="headerlink" title="CSDN"></a>CSDN</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">CSDN</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://blog.csdn.net/jingmo_see">CSDN</a></p>
+<h3 id="哔哩哔哩"><a href="#哔哩哔哩" class="headerlink" title="哔哩哔哩"></a>哔哩哔哩</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">哔哩哔哩</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://space.bilibili.com/50764593">哔哩哔哩</a></p>
+<h3 id="网易云音乐"><a href="#网易云音乐" class="headerlink" title="网易云音乐"></a>网易云音乐</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">网易云音乐</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://music.163.com/#/user/home?id=301645298">网易云音乐</a></p>
+]]></content>
+  </entry>
+  <entry>
     <title>名人传（持续更新）</title>
-    <url>/2021/05/26/%E5%8F%A5%E5%AD%90%E8%BF%B7%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/</url>
+    <url>/2021/05/26/%E5%90%8D%E4%BA%BA%E4%BC%A0%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="斯蒂芬·威廉·霍金"><a href="#斯蒂芬·威廉·霍金" class="headerlink" title="斯蒂芬·威廉·霍金"></a>斯蒂芬·威廉·霍金</h1><blockquote>
 <p><a href="https://baike.baidu.com/item/%E6%96%AF%E8%92%82%E8%8A%AC%C2%B7%E5%A8%81%E5%BB%89%C2%B7%E9%9C%8D%E9%87%91/950423?fromtitle=%E9%9C%8D%E9%87%91&fromid=171893&fr=aladdin">Stephen William Hawking</a>，1942年1月8日—2018年3月14日），男，出生于英国牛津，英国剑桥大学著名物理学家，现代最伟大的物理学家之一、20世纪享有国际盛誉的伟人之一。</p>
 </blockquote>
