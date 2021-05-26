@@ -1,703 +1,550 @@
 <!DOCTYPE html>
+<html>
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Jingmo, xyh, xyhshell" />
+  
+  
+  <title>Code blog</title>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<html lang="zh-CN">
+  
+    <meta name="keywords" content="xyh, jingmo, xyhshell, Hexo, blog" />
   
 
-    <head>
-      <meta charset="utf-8" />
-       
-      <meta name="keywords" content="jingmo" />
-       
-      <meta name="description" content="jingmo, blog, xyhshell" />
-      
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, maximum-scale=1"
-      />
-      <title> Code blog</title>
-  <meta name="generator" content="hexo-theme-ayer">
-      
-      <link rel="shortcut icon" href="http://wx.qlogo.cn/mmopen/SpAhgKJmTfTVkicXGWebu5H3icKiaS52eZOmn4HRNVbibBGNJHibjd86bB4DoN17mjF3cq6H6eymddV7NQuibYJU51N1zaTX41wLnq/64" />
-       
-<link rel="stylesheet" href="/dist/main.css">
+  
+  <meta name="description" content="Code blog">
 
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css"
-      />
-      
-<link rel="stylesheet" href="/css/custom.css">
- 
-      <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
-       
- 
+  
 
-      <!-- mermaid -->
-      
-    <link rel="alternate" href="/atom.xml" title="Code blog" type="application/atom+xml">
-</head>
-  </html>
-</html>
+  
 
+  
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+  
 
-<body>
-  <div id="app">
-    
-      
-    <main class="content on">
-      
-<section class="cover">
-    
-      
-      <a class="forkMe" href="https://github.com/Xyhshell"
-        target="_blank"><img width="149" height="149" src="/images/forkme.png"
-          class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
-    
-  <div class="cover-frame">
-    <div class="bg-box">
-      <img src="https://gitee.com/xyhshell/file/raw/master/file/io.jpg" alt="image frame" />
-    </div>
-    <div class="cover-inner text-center text-white">
-      <h1><a href="/">Code blog</a></h1>
-      <div id="subtitle-box">
-        
-        <span id="subtitle"></span>
-        
-      </div>
-      <div>
-        
-      </div>
-    </div>
-  </div>
-  <div class="cover-learn-more">
-    <a href="javascript:void(0)" class="anchor"><i class="ri-arrow-down-line"></i></a>
-  </div>
-</section>
+  
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
-
-
-<!-- Subtitle -->
+  
 
   <script>
-    try {
-      var typed = new Typed("#subtitle", {
-        strings: ['面朝大海，春暖花开', '人生如逆旅，我亦是行人', '想要的都拥有，得不到的都释怀'],
-        startDelay: 21,
-        typeSpeed: 260,
-        loop: true,
-        backSpeed: 99,
-        showCursor: true
-      });
-    } catch (err) {
-      console.log(err)
-    }
-  </script>
+  // theme-ad's config script
+  // it can be used in every script
   
-<div id="main">
-  <section class="outer">
-  
-  
-  
-
-<div class="notice" style="margin-top:50px">
-    <i class="ri-heart-fill"></i>
-    <div class="notice-content" id="broad"></div>
-</div>
-<script type="text/javascript">
-    fetch('https://v1.hitokoto.cn')
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById("broad").innerHTML = data.hitokoto;
-        })
-        .catch(console.error)
+  window.AD_CONFIG = {
+    leancloud: {"appid":null,"appkey":null,"comment":false,"count":false},
+    welcome: {"enable":false,"interval":30},
+    start_time: "2021-05-10",
+    passwords: ["efe07af7441da2b69c4a41e42e73be4db47f66010a56900788a458354a7373ec", ],
+    is_post: false,
+    lock: false,
+    author: "Jingmo, xyh, xyhshell",
+    share: {"twitter":false,"facebook":false,"weibo":false,"qq":true,"wechat":true},
+    mathjax: true,
+    page_type: "",
+    root: "/"
+  };
 </script>
 
-<style>
-    .notice {
-        padding: 20px;
-        border: 1px dashed #e6e6e6;
-        color: #969696;
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        background: #fbfbfb50;
-        border-radius: 10px;
-    }
-
-    .notice i {
-        float: left;
-        color: #999;
-        font-size: 16px;
-        padding-right: 10px;
-        vertical-align: middle;
-        margin-top: -2px;
-    }
-
-    .notice-content {
-        display: initial;
-        vertical-align: middle;
-    }
-</style>
   
-  <article class="articles">
-    
-    
-    
-    
-    <article
-  id="post-blog-图片测试"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/05/11/blog-%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/"
-    >blog 图片测试</a> 
-</h2>
- 
+<script src="/vendor/sha256.min.js"></script>
+<script src="/js/auth.js"></script>
+<script src="/js/index.js"></script>
+<script src="/vendor/qrcode.min.js"></script>
 
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2021/05/11/blog-%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/" class="article-date">
-  <time datetime="2021-05-11T11:57:45.603Z" itemprop="datePublished">2021-05-11</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E8%AF%97%E8%AF%8D/">诗词</a>
-  </div>
-   
-    </div>
-       
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/test/" rel="tag">test</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%97%E8%AF%8D/" rel="tag">诗词</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
-    <article
-  id="post-Usb-后台拷贝"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/05/11/Usb-%E5%90%8E%E5%8F%B0%E6%8B%B7%E8%B4%9D/"
-    >Usb 后台拷贝</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2021/05/11/Usb-%E5%90%8E%E5%8F%B0%E6%8B%B7%E8%B4%9D/" class="article-date">
-  <time datetime="2021-05-11T09:41:47.647Z" itemprop="datePublished">2021-05-11</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/python/">python</a>
-  </div>
-   
-    </div>
-       
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/code/" rel="tag">code</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
-    <article
-  id="post-hexo"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/05/10/hexo/"
-    >HEXO 相关参数及配置</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2021/05/10/hexo/" class="article-date">
-  <time datetime="2021-05-10T13:28:42.450Z" itemprop="datePublished">2021-05-10</time>
-</a> 
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a>
-  </div>
-   
-    </div>
-       
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HEXO/" rel="tag">HEXO</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
-    <article
-  id="post-test"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/05/10/test/"
-    >test</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2021/05/10/test/" class="article-date">
-  <time datetime="2021-05-10T12:18:14.444Z" itemprop="datePublished">2021-05-10</time>
-</a>    
-    </div>
-       
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
-    <article
-  id="post-hello-world"
-  class="article article-type-post"
-  itemscope
-  itemprop="blogPost"
-  data-scroll-reveal
->
-  <div class="article-inner">
-    
-    <header class="article-header">
-       
-<h2 itemprop="name">
-  <a class="article-title" href="/2021/05/10/hello-world/"
-    >Hello World</a> 
-</h2>
- 
-
-      
-    </header>
-     
-    <div class="article-meta">
-      <a href="/2021/05/10/hello-world/" class="article-date">
-  <time datetime="2021-05-10T11:13:14.358Z" itemprop="datePublished">2021-05-10</time>
-</a>    
-    </div>
-       
-
-    <!-- copyright -->
-    
-    <footer class="article-footer">
-       
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/blog-%E5%88%9D%E5%A7%8B%E5%8C%96/" rel="tag">blog 初始化</a></li></ul>
-
-    </footer>
-  </div>
-
-   
-    
-</article>
-
-    
-  </article>
-  
 
   
-</section>
-</div>
-
-      <footer class="footer">
-  <div class="outer">
-    <ul>
-      <li>
-        Copyrights &copy;
-        2021
-        <i class="ri-heart-fill heart_icon"></i> Jingmo - Xiao
-      </li>
-    </ul>
-    <ul>
-      <li>
-        
-        
-        
-        由 <a href="https://hexo.io" target="_blank">Hexo</a> 强力驱动
-        <span class="division">|</span>
-        主题 - <a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>
-        
-      </li>
-    </ul>
-    <ul>
-      <li>
-        
-        
-        <span>
-  <span><i class="ri-user-3-fill"></i>访问人数:<span id="busuanzi_value_site_uv"></span></span>
-  <span class="division">|</span>
-  <span><i class="ri-eye-fill"></i>浏览次数:<span id="busuanzi_value_page_pv"></span></span>
-</span>
-        
-      </li>
-    </ul>
-    <ul>
-      
-    </ul>
-    <ul>
-      
-    </ul>
-    <ul>
-      <li>
-        <!-- cnzz统计 -->
-        
-      </li>
-    </ul>
-  </div>
-</footer>
-      <div class="float_btns">
-        <div class="totop" id="totop">
-  <i class="ri-arrow-up-line"></i>
-</div>
-
-      </div>
-    </main>
-    <aside class="sidebar on">
-      <button class="navbar-toggle"></button>
-<nav class="navbar">
+    <link rel="icon" href="http://wx.qlogo.cn/mmopen/SpAhgKJmTfTVkicXGWebu5H3icKiaS52eZOmn4HRNVbibBGNJHibjd86bB4DoN17mjF3cq6H6eymddV7NQuibYJU51N1zaTX41wLnq/64">
+    <link rel="apple-touch-icon" href="http://p1.music.126.net/fGNCB3dV31wX7ZF2mglZdg==/109951164755221775.jpg?param=180y180">
   
-  <div class="logo">
-    <a href="/"><img src="http://p1.music.126.net/fGNCB3dV31wX7ZF2mglZdg==/109951164755221775.jpg?param=180y180" alt="Code blog"></a>
-  </div>
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
   
-  <ul class="nav nav-main">
+<link rel="stylesheet" href="/css/index.css">
+<link rel="stylesheet" href="/styles/components/highlight/highlight.css">
+
+
+  
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Code blog" type="application/atom+xml">
+</head>
+  <body>
+    <header class="site-header">
+  <div class="site-header-brand">
     
-    <li class="nav-item">
-      <a class="nav-item-link" href="/">主页</a>
-    </li>
+      <span class="site-header-brand-title">
+        <a href="/">Jingmoshell</a>
+      </span>
     
-    <li class="nav-item">
-      <a class="nav-item-link" href="/archives">归档</a>
-    </li>
     
-    <li class="nav-item">
-      <a class="nav-item-link" href="/categories">分类</a>
-    </li>
+      <span class="site-header-brand-motto"> | 人生如逆旅，我亦是行人</span>
     
-    <li class="nav-item">
-      <a class="nav-item-link" href="/tags">标签</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/about">关于我</a>
-    </li>
-    
-  </ul>
-</nav>
-<nav class="navbar navbar-bottom">
-  <ul class="nav">
-    <li class="nav-item">
+  </div>
+  <div class="site-header-right">
+    <nav class="site-header-navigation">
       
-      <a class="nav-item-link nav-item-search"  title="搜索">
-        <i class="ri-search-line"></i>
+        <a href="/" target="_self">首页</a>
+      
+        <a href="/archives/" target="_self">归档</a>
+      
+        <a href="/tags/" target="_self">标签</a>
+      
+        <a href="/categories/" target="_self">分类</a>
+      
+        <a href="/about/" target="_self">关于</a>
+      
+    </nav>
+    <div class="site-header-btn">
+      
+        <a href="https://github.com/Xyhshell/" target="_blank" id="site-github">
+          <i class="fa fa-github-alt"></i>
+        </a>
+      
+      <a href="javascript:void(0);" id="site-search">
+        <i class="fa fa-search"></i>
       </a>
+      <a href="javascript:void(0);" id="site-nav-btn">
+        <i class="fa fa-ellipsis-v"></i>
+      </a>
+    </div>
+  </div>
+</header>
+<nav class="table-content" id="site-nav">
+  <div class="table-content-title">
+    <span>导航</span>
+  </div>
+  <div class="table-content-main">
+    <ol class="toc">
       
+        <li class="toc-item">
+          <a href="/" target="_self">
+            首页
+          </a>
+        </li>
       
-    </li>
-  </ul>
+        <li class="toc-item">
+          <a href="/archives/" target="_self">
+            归档
+          </a>
+        </li>
+      
+        <li class="toc-item">
+          <a href="/tags/" target="_self">
+            标签
+          </a>
+        </li>
+      
+        <li class="toc-item">
+          <a href="/categories/" target="_self">
+            分类
+          </a>
+        </li>
+      
+        <li class="toc-item">
+          <a href="/about/" target="_self">
+            关于
+          </a>
+        </li>
+      
+    </ol>
+  </div>
 </nav>
-<div class="search-form-wrap">
-  <div class="local-search local-search-plugin">
-  <input type="search" id="local-search-input" class="local-search-input" placeholder="Search...">
-  <div id="local-search-result" class="local-search-result"></div>
-</div>
-</div>
-    </aside>
-    <div id="mask"></div>
+<div id="site-process"></div>
+    <main>
+      <div class="home">
+  
+    <div class="home-article-wrapper clearfix">
+      <div class="home-article" data-cover="false">
+        <div class="home-article-inner" data-cover="false">
+          <div class="passage-meta">
+            <span>
+              <i class="fa fa-calendar"></i>2021-05-11
+            </span>
+            
+              <span>
+                | <a href="/categories/%E8%AF%97%E8%AF%8D/"><i class="fa fa-bookmark"></i>诗词</a>
+              </span>
+            
+            
+              <span>
+                | <i class="fa fa-unlock-alt"></i>UNLOCK
+              </span>
+            
+          </div>
+          <h1 class="home-article-title">
+            <a href="/2021/05/11/blog-%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/">blog 图片测试</a>
+          </h1>
+          <div class="home-article-content passage-article">
+            
+              <h2 id="陶渊明"><a href="#陶渊明" class="headerlink" title="陶渊明"></a>陶渊明</h2><blockquote>
+<p>[魏晋]</p>
+<p>陶渊明（352或365年—427年），名潜，字渊明，又字元亮，自号“五柳先生”，私谥“靖节”，世称靖节先生，浔阳柴桑人。东晋末至南朝宋初期伟大的诗人、辞赋家。曾任江州祭酒、建威参军、镇军参军、彭泽县令等职，最末一次出仕为彭泽县令，八十多天便弃职而去，从此归隐田园。他是中国第一位田园诗人，被称为“古今隐逸诗人之宗”，有《陶渊明集》。</p>
+</blockquote>
+<hr>
+            
+          </div>
+          <a class="home-article-read" href="/2021/05/11/blog-%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/">
+            READ MORE >>>
+          </a>
+          
+            <div class="passage-tags">
+             
+              <a href="/tags/test/"><i class="fa fa-tags"></i>test</a>
+             
+              <a href="/tags/%E8%AF%97%E8%AF%8D/"><i class="fa fa-tags"></i>诗词</a>
+            
+            </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  
+    <div class="home-article-wrapper clearfix">
+      <div class="home-article" data-cover="false">
+        <div class="home-article-inner" data-cover="false">
+          <div class="passage-meta">
+            <span>
+              <i class="fa fa-calendar"></i>2021-05-11
+            </span>
+            
+              <span>
+                | <a href="/categories/python/"><i class="fa fa-bookmark"></i>python</a>
+              </span>
+            
+            
+              <span>
+                | <i class="fa fa-unlock-alt"></i>UNLOCK
+              </span>
+            
+          </div>
+          <h1 class="home-article-title">
+            <a href="/2021/05/11/Usb-%E5%90%8E%E5%8F%B0%E6%8B%B7%E8%B4%9D/">Usb 后台拷贝</a>
+          </h1>
+          <div class="home-article-content passage-article">
+            
+              <h2 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h2><p>1.python 3.7.5</p>
+<p>2.pycharm</p>
+<blockquote>
+<p>初代版本，后续未更新！</p>
+</blockquote>
+<hr>
+            
+          </div>
+          <a class="home-article-read" href="/2021/05/11/Usb-%E5%90%8E%E5%8F%B0%E6%8B%B7%E8%B4%9D/">
+            READ MORE >>>
+          </a>
+          
+            <div class="passage-tags">
+             
+              <a href="/tags/python/"><i class="fa fa-tags"></i>python</a>
+             
+              <a href="/tags/code/"><i class="fa fa-tags"></i>code</a>
+            
+            </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  
+    <div class="home-article-wrapper clearfix">
+      <div class="home-article" data-cover="false">
+        <div class="home-article-inner" data-cover="false">
+          <div class="passage-meta">
+            <span>
+              <i class="fa fa-calendar"></i>2021-05-10
+            </span>
+            
+              <span>
+                | <a href="/categories/%E6%95%99%E7%A8%8B/"><i class="fa fa-bookmark"></i>教程</a>
+              </span>
+            
+            
+              <span>
+                | <i class="fa fa-unlock-alt"></i>UNLOCK
+              </span>
+            
+          </div>
+          <h1 class="home-article-title">
+            <a href="/2021/05/10/hexo/">HEXO 相关参数及配置</a>
+          </h1>
+          <div class="home-article-content passage-article">
+            
+              <h2 id="相关环境的检查"><a href="#相关环境的检查" class="headerlink" title="相关环境的检查"></a>相关环境的检查</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br><span class="line">git --version</span><br></pre></td></tr></table></figure>
 
-<!-- #reward -->
-<div id="reward">
-  <span class="close"><i class="ri-close-line"></i></span>
-  <p class="reward-p"><i class="ri-cup-line"></i>关注公众号，获取更多技术支持 ~</p>
-  <div class="reward-box">
+<h2 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h2>
+            
+          </div>
+          <a class="home-article-read" href="/2021/05/10/hexo/">
+            READ MORE >>>
+          </a>
+          
+            <div class="passage-tags">
+             
+              <a href="/tags/HEXO/"><i class="fa fa-tags"></i>HEXO</a>
+             
+              <a href="/tags/%E6%95%99%E7%A8%8B/"><i class="fa fa-tags"></i>教程</a>
+             
+              <a href="/tags/%E7%AC%94%E8%AE%B0/"><i class="fa fa-tags"></i>笔记</a>
+            
+            </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  
+    <div class="home-article-wrapper clearfix">
+      <div class="home-article" data-cover="false">
+        <div class="home-article-inner" data-cover="false">
+          <div class="passage-meta">
+            <span>
+              <i class="fa fa-calendar"></i>2021-05-10
+            </span>
+            
+            
+              <span>
+                | <i class="fa fa-unlock-alt"></i>UNLOCK
+              </span>
+            
+          </div>
+          <h1 class="home-article-title">
+            <a href="/2021/05/10/test/">test</a>
+          </h1>
+          <div class="home-article-content passage-article">
+            
+              <h2 id="Quick-start"><a href="#Quick-start" class="headerlink" title="Quick start"></a>Quick start</h2>
+            
+          </div>
+          <a class="home-article-read" href="/2021/05/10/test/">
+            READ MORE >>>
+          </a>
+          
+        </div>
+        
+      </div>
+    </div>
+  
+    <div class="home-article-wrapper clearfix">
+      <div class="home-article" data-cover="false">
+        <div class="home-article-inner" data-cover="false">
+          <div class="passage-meta">
+            <span>
+              <i class="fa fa-calendar"></i>2021-05-10
+            </span>
+            
+            
+              <span>
+                | <i class="fa fa-unlock-alt"></i>UNLOCK
+              </span>
+            
+          </div>
+          <h1 class="home-article-title">
+            <a href="/2021/05/10/hello-world/">Hello World</a>
+          </h1>
+          <div class="home-article-content passage-article">
+            
+              <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2>
+            
+          </div>
+          <a class="home-article-read" href="/2021/05/10/hello-world/">
+            READ MORE >>>
+          </a>
+          
+            <div class="passage-tags">
+             
+              <a href="/tags/blog-%E5%88%9D%E5%A7%8B%E5%8C%96/"><i class="fa fa-tags"></i>blog 初始化</a>
+            
+            </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  
+</div>
+    </main>
     
+    <div class="site-footer-wrapper">
+  <footer class="site-footer">
     
-    <div class="reward-item">
-      <img class="reward-img" src="/images/gh.jpg">
-      <span class="reward-type">微信</span>
+      
+        <div class="site-footer-col">
+          <h5 class="site-footer-title">找到我</h5>
+          
+            <span class="site-footer-item">
+              <a href="https://blog.csdn.net/jingmo_see" target="_blank">CSDN</a>
+            </span>
+          
+            <span class="site-footer-item">
+              <a href="https://space.bilibili.com/50764593" target="_blank">哔哩哔哩</a>
+            </span>
+          
+            <span class="site-footer-item">
+              <a href="https://music.163.com/#/user/home?id=301645298" target="_blank">网易云音乐</a>
+            </span>
+          
+        </div>
+      
+        <div class="site-footer-col">
+          <h5 class="site-footer-title">技术网站</h5>
+          
+            <span class="site-footer-item">
+              <a href="https://www.52pojie.cn/" target="_blank">吾爱破解</a>
+            </span>
+          
+            <span class="site-footer-item">
+              <a href="https://www.right.com.cn/forum/forum.php" target="_blank">恩山论坛</a>
+            </span>
+          
+            <span class="site-footer-item">
+              <a href="http://bbs.pcbeta.com/" target="_blank">远景论坛</a>
+            </span>
+          
+        </div>
+      
+        <div class="site-footer-col">
+          <h5 class="site-footer-title">推荐导航</h5>
+          
+            <span class="site-footer-item">
+              <a href="http://b.lackk.com/" target="_blank">兰客导航</a>
+            </span>
+          
+            <span class="site-footer-item">
+              <a href="http://ilxdh.com/" target="_blank">龙轩导航</a>
+            </span>
+          
+        </div>
+      
+    
+    <div class="site-footer-info">
+      <i class="fa fa-clock-o"></i> 本站已稳定运行<span id="site-time"></span>
     </div>
     
+    
+    <div class="site-footer-info">
+      <i class="fa fa-copyright"></i> 
+      2019 <a href="https://github.com/dongyuanxin/theme-ad/" target="_blank">Theme-AD</a>.
+      Created by <a href="https://godbmw.com/" target="_blank">GodBMW</a>.
+      All rights reserved.
+    </div>
+  </footer>
+</div>
+    <div id="site-layer" style="display:none;">
+  <div class="site-layer-content">
+    <div class="site-layer-header">
+      <span class="site-layer-header-title" id="site-layer-title"></span>
+      <i class="fa fa-close" id="site-layer-close"></i>
+    </div>
+    <div class="site-layer-body" id="site-layer-container">
+      <div class="site-layer-input" id="site-layer-search" style="display: none;">
+        <div class="site-layer-input-choose">
+          <a href="javascript:void(0);" title="Change Search Engine">Google</a>
+        </div>
+        <input type="text">
+        <i class="fa fa-search"></i>
+      </div>
+      
+        <div class="site-layer-reward" id="site-layer-reward" style="display: none;">
+          
+            <div>
+              <img src="/images/wechat.jpg" alt="WeChat">
+              
+                <p>WeChat</p>
+              
+            </div>
+          
+        </div>
+      
+      <div id="site-layer-welcome" style="display:none;"></div>
+    </div>
   </div>
 </div>
     
-<script src="/js/jquery-2.0.3.min.js"></script>
- 
-<script src="/js/lazyload.min.js"></script>
 
-<!-- Tocbot -->
-
-<script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css"
-/>
-<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
-
-<script src="/dist/main.js"></script>
-
-<!-- ImageViewer -->
- <!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    <!-- Background of PhotoSwipe. 
-         It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-
-        <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                <!--  Controls are self-explanatory. Order can be changed. -->
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-    </div>
-
+<div class="bottom-bar">
+  <div class="bottom-bar-left">
+    <a href="javascript:void(0);" data-enable="false">
+      <i class="fa fa-arrow-left"></i>
+    </a>
+    <a href="javascript:void(0);" data-enable="false">
+      <i class="fa fa-arrow-right"></i>
+    </a>
+  </div>
+  <div class="bottom-bar-right">
+    <a href="javascript:void(0);" data-enable="false" id="site-toc-show-btn">
+      <i class="fa fa-bars"></i>
+    </a>
+    
+    <a href="javascript:void(0);" id="site-toggle-share-btn">
+      <i class="fa fa-share-alt"></i>
+    </a>
+    
+      <a href="javascript:void(0);" id="site-reward">
+        <i class="fa fa-thumbs-up"></i>
+      </a>
+    
+    <a href="javascript:void(0);" id="back-top-btn">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
 </div>
+    <div id="share-btn">
+  
+  
+  
+  
+    <a id="share-btn-qq" href="javascript:void(0);" target="_blank">
+      <i class="fa fa-qq"></i>
+    </a>
+  
+  
+    <a id="share-btn-wechat" href="javascript:void(0);" target="_blank">
+      <i class="fa fa-wechat"></i>
+    </a>
+  
+</div>
+    
+  <script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+  <script async>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css">
-<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+    gtag('config', '');
+  </script>
 
-<script>
-    function viewer_init() {
-        let pswpElement = document.querySelectorAll('.pswp')[0];
-        let $imgArr = document.querySelectorAll(('.article-entry img:not(.reward-img)'))
 
-        $imgArr.forEach(($em, i) => {
-            $em.onclick = () => {
-                // slider展开状态
-                // todo: 这样不好，后面改成状态
-                if (document.querySelector('.left-col.show')) return
-                let items = []
-                $imgArr.forEach(($em2, i2) => {
-                    let img = $em2.getAttribute('data-idx', i2)
-                    let src = $em2.getAttribute('data-target') || $em2.getAttribute('src')
-                    let title = $em2.getAttribute('alt')
-                    // 获得原图尺寸
-                    const image = new Image()
-                    image.src = src
-                    items.push({
-                        src: src,
-                        w: image.width || $em2.width,
-                        h: image.height || $em2.height,
-                        title: title
-                    })
-                })
-                var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, {
-                    index: parseInt(i)
-                });
-                gallery.init()
-            }
-        })
-    }
-    viewer_init()
-</script> 
-<!-- MathJax -->
 
-<!-- Katex -->
+  <script async>
+  (function(){
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+  })();
+  </script>
 
-<!-- busuanzi  -->
- 
-<script src="/js/busuanzi-2.3.pure.min.js"></script>
- 
-<!-- ClickLove -->
 
-<!-- ClickBoom1 -->
 
-<!-- ClickBoom2 -->
-
-<!-- CodeCopy -->
- 
-<link rel="stylesheet" href="/css/clipboard.css">
- <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
-<script>
-  function wait(callback, seconds) {
-    var timelag = null;
-    timelag = window.setTimeout(callback, seconds);
-  }
-  !function (e, t, a) {
-    var initCopyCode = function(){
-      var copyHtml = '';
-      copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
-      copyHtml += '<i class="ri-file-copy-2-line"></i><span>COPY</span>';
-      copyHtml += '</button>';
-      $(".highlight .code pre").before(copyHtml);
-      $(".article pre code").before(copyHtml);
-      var clipboard = new ClipboardJS('.btn-copy', {
-        target: function(trigger) {
-          return trigger.nextElementSibling;
-        }
-      });
-      clipboard.on('success', function(e) {
-        let $btn = $(e.trigger);
-        $btn.addClass('copied');
-        let $icon = $($btn.find('i'));
-        $icon.removeClass('ri-file-copy-2-line');
-        $icon.addClass('ri-checkbox-circle-line');
-        let $span = $($btn.find('span'));
-        $span[0].innerText = 'COPIED';
-        
-        wait(function () { // 等待两秒钟后恢复
-          $icon.removeClass('ri-checkbox-circle-line');
-          $icon.addClass('ri-file-copy-2-line');
-          $span[0].innerText = 'COPY';
-        }, 2000);
-      });
-      clipboard.on('error', function(e) {
-        e.clearSelection();
-        let $btn = $(e.trigger);
-        $btn.addClass('copy-failed');
-        let $icon = $($btn.find('i'));
-        $icon.removeClass('ri-file-copy-2-line');
-        $icon.addClass('ri-time-line');
-        let $span = $($btn.find('span'));
-        $span[0].innerText = 'COPY FAILED';
-        
-        wait(function () { // 等待两秒钟后恢复
-          $icon.removeClass('ri-time-line');
-          $icon.addClass('ri-file-copy-2-line');
-          $span[0].innerText = 'COPY';
-        }, 2000);
-      });
-    }
-    initCopyCode();
-  }(window, document);
-</script>
- 
-<!-- CanvasBackground -->
- 
-<script src="/js/dz.js"></script>
- 
-<script>
-  if (window.mermaid) {
-    mermaid.initialize({ theme: "forest" });
-  }
-</script>
+  <script async>
+    (function(){
+    var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?":"https://jspassport.ssl.qhimg.com/11.0.1.js?";
+    document.write('<script src="' + src + '" id="sozz"><\/script>');
+    })();
+  </script>
 
 
     
-  </div>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"live2d-widget-model-wanko"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
-
+  <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"live2d-widget-model-wanko"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
 </html>
