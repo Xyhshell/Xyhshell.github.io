@@ -67,6 +67,27 @@
 
   
   <url>
+    <loc>https://xyhshell.github.io/tags/HEXO/</loc>
+    <lastmod>2021-05-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xyhshell.github.io/tags/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2021-05-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://xyhshell.github.io/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2021-05-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://xyhshell.github.io/tags/test/</loc>
     <lastmod>2021-05-26</lastmod>
     <changefreq>daily</changefreq>
@@ -101,28 +122,14 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://xyhshell.github.io/tags/HEXO/</loc>
-    <lastmod>2021-05-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xyhshell.github.io/tags/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2021-05-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xyhshell.github.io/tags/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2021-05-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
+  
+  <url>
+    <loc>https://xyhshell.github.io/categories/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2021-05-26</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
   <url>
     <loc>https://xyhshell.github.io/categories/%E8%AF%97%E8%AF%8D/</loc>
@@ -133,13 +140,6 @@
   
   <url>
     <loc>https://xyhshell.github.io/categories/python/</loc>
-    <lastmod>2021-05-26</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://xyhshell.github.io/categories/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2021-05-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

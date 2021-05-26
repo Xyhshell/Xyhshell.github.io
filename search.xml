@@ -1,6 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>HEXO 相关参数及配置</title>
+    <url>/2021/05/10/hexo/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="相关环境的检查"><a href="#相关环境的检查" class="headerlink" title="相关环境的检查"></a>相关环境的检查</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br><span class="line">git --version</span><br></pre></td></tr></table></figure>
+
+<h2 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h2><span id="more"></span>
+
+<p>安装之前可以先安装 cnpm</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm</span><br></pre></td></tr></table></figure>
+
+<p>全局安装框架</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+
+<p>创建你的博客目录 ;  “windows 需要使用管理员权限的cmd 在文件目录创建！！！”</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init (文件夹)</span><br></pre></td></tr></table></figure>
+
+<p>进入你博客的目录</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> (文件夹)</span><br></pre></td></tr></table></figure>
+
+<p>复制文件到你博客的目录</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<p>安装Hexo部署插件<br>请在你博客的目录下启动cmd，再执行以下代码</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<h2 id="Git的配置"><a href="#Git的配置" class="headerlink" title="Git的配置"></a>Git的配置</h2><p>验证用户</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;用户名&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;用户邮箱&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>生成密钥</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;用户邮箱&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="在用户目录的-ssh-目录下复制新创建的密钥文件，放置仓库公钥"><a href="#在用户目录的-ssh-目录下复制新创建的密钥文件，放置仓库公钥" class="headerlink" title="在用户目录的 .ssh 目录下复制新创建的密钥文件，放置仓库公钥"></a>在用户目录的 .ssh 目录下复制新创建的密钥文件，放置仓库公钥</h2><h3 id="博客-config-yml-文件的配置"><a href="#博客-config-yml-文件的配置" class="headerlink" title="博客 _config.yml 文件的配置"></a>博客 _config.yml 文件的配置</h3><p>博客根目录的 _config.yml 文件，将一下信息添加到里面去。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: <span class="comment"># 替换成你自己仓库的HTTP URL地址</span></span><br><span class="line">  branch: master  <span class="comment"># 提交主分支</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Hexo常用代码"><a href="#Hexo常用代码" class="headerlink" title="Hexo常用代码"></a>Hexo常用代码</h4><p>清理缓存</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo cl</span><br></pre></td></tr></table></figure>
+
+<p>hexo cl 是 hexo clean 的简写<br>生成静态页面</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<p>hexo g 是 hexo generate 的简写<br>在本地映射（预览）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>hexo s 是 hexo server 的简写<br>部署推送</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>hexo d 是 hexo deploy 的简写</p>
+]]></content>
+      <categories>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>HEXO</tag>
+        <tag>教程</tag>
+        <tag>笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>blog 图片测试</title>
     <url>/2021/05/11/blog-%E5%9B%BE%E7%89%87%E6%B5%8B%E8%AF%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="陶渊明"><a href="#陶渊明" class="headerlink" title="陶渊明"></a>陶渊明</h2><blockquote>
@@ -70,63 +127,6 @@
 ]]></content>
       <tags>
         <tag>blog 初始化</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HEXO 相关参数及配置</title>
-    <url>/2021/05/10/hexo/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="相关环境的检查"><a href="#相关环境的检查" class="headerlink" title="相关环境的检查"></a>相关环境的检查</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br><span class="line">git --version</span><br></pre></td></tr></table></figure>
-
-<h2 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h2><span id="more"></span>
-
-<p>安装之前可以先安装 cnpm</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm</span><br></pre></td></tr></table></figure>
-
-<p>全局安装框架</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-
-<p>创建你的博客目录 ;  “windows 需要使用管理员权限的cmd 在文件目录创建！！！”</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init (文件夹)</span><br></pre></td></tr></table></figure>
-
-<p>进入你博客的目录</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> (文件夹)</span><br></pre></td></tr></table></figure>
-
-<p>复制文件到你博客的目录</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
-
-<p>安装Hexo部署插件<br>请在你博客的目录下启动cmd，再执行以下代码</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<h2 id="Git的配置"><a href="#Git的配置" class="headerlink" title="Git的配置"></a>Git的配置</h2><p>验证用户</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;用户名&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;用户邮箱&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>生成密钥</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;用户邮箱&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="在用户目录的-ssh-目录下复制新创建的密钥文件，放置仓库公钥"><a href="#在用户目录的-ssh-目录下复制新创建的密钥文件，放置仓库公钥" class="headerlink" title="在用户目录的 .ssh 目录下复制新创建的密钥文件，放置仓库公钥"></a>在用户目录的 .ssh 目录下复制新创建的密钥文件，放置仓库公钥</h2><h3 id="博客-config-yml-文件的配置"><a href="#博客-config-yml-文件的配置" class="headerlink" title="博客 _config.yml 文件的配置"></a>博客 _config.yml 文件的配置</h3><p>博客根目录的 _config.yml 文件，将一下信息添加到里面去。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: <span class="comment"># 替换成你自己仓库的HTTP URL地址</span></span><br><span class="line">  branch: master  <span class="comment"># 提交主分支</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="Hexo常用代码"><a href="#Hexo常用代码" class="headerlink" title="Hexo常用代码"></a>Hexo常用代码</h4><p>清理缓存</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo cl</span><br></pre></td></tr></table></figure>
-
-<p>hexo cl 是 hexo clean 的简写<br>生成静态页面</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-
-<p>hexo g 是 hexo generate 的简写<br>在本地映射（预览）</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p>hexo s 是 hexo server 的简写<br>部署推送</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-
-<p>hexo d 是 hexo deploy 的简写</p>
-]]></content>
-      <categories>
-        <category>教程</category>
-      </categories>
-      <tags>
-        <tag>HEXO</tag>
-        <tag>教程</tag>
-        <tag>笔记</tag>
       </tags>
   </entry>
   <entry>
