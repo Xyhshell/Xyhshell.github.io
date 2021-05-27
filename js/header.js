@@ -13,16 +13,16 @@
 
   let platformIndex = 0,
     platforms = [
+      'Baidu',
+      'Bing',
       'Google',
-      'BaiDu',
-      'Bing'
     ];
 
   searchBtn.addEventListener('click', (e) => {
     layer.style.display = 'block';
     searchDOM.style.display = 'flex';
     inputDOM.focus();
-    title.innerHTML = '搜索';
+    title.innerHTML = '站外搜索';
 
     window.AD_CONFIG.layer.add(() => {
       title.innerHTML = '';
@@ -68,16 +68,17 @@
   });
 
   function openSearch(keywords) {
-    keywords = `site:${window.location.hostname} ${decodeURIComponent(keywords)}`;
+    //keywords = `site:${window.location.hostname} ${decodeURIComponent(keywords)}`;
+    keywords = `${decodeURIComponent(keywords)}`;
     let href = null;
     switch (platforms[platformIndex]) {
-      case 'BaiDu':
+      default:
         href = `https://www.baidu.com/s?wd=${keywords}`;
         break;
       case 'Bing':
         href = `https://cn.bing.com/search?q=${keywords}&FORM=BESBTB&ensearch=1`;
         break;
-      default:
+      case 'Google':
         href = `https://www.google.com/search?q=${keywords}`;
         break;
     }
