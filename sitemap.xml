@@ -95,13 +95,6 @@
   </url>
   
   <url>
-    <loc>https://xyhshell.github.io/tags/blog-%E5%88%9D%E5%A7%8B%E5%8C%96/</loc>
-    <lastmod>2021-07-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://xyhshell.github.io/tags/test/</loc>
     <lastmod>2021-07-06</lastmod>
     <changefreq>daily</changefreq>
@@ -116,7 +109,7 @@
   </url>
   
   <url>
-    <loc>https://xyhshell.github.io/tags/%E5%90%8D%E4%BA%BA%E4%BC%A0/</loc>
+    <loc>https://xyhshell.github.io/tags/blog-%E5%88%9D%E5%A7%8B%E5%8C%96/</loc>
     <lastmod>2021-07-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -143,6 +136,13 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>https://xyhshell.github.io/tags/%E5%90%8D%E4%BA%BA%E4%BC%A0/</loc>
+    <lastmod>2021-07-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
@@ -160,14 +160,14 @@
   </url>
   
   <url>
-    <loc>https://xyhshell.github.io/categories/%E5%90%8D%E4%BA%BA%E4%BC%A0/</loc>
+    <loc>https://xyhshell.github.io/categories/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2021-07-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://xyhshell.github.io/categories/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://xyhshell.github.io/categories/%E5%90%8D%E4%BA%BA%E4%BC%A0/</loc>
     <lastmod>2021-07-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
